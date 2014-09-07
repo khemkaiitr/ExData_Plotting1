@@ -1,5 +1,6 @@
 
 pathData  <- getwd(); # Get the path of the working directory
+
 # Get the filename of data and download it from the server.
 temp  <- tempfile()
 url  <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
