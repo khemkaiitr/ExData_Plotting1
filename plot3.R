@@ -9,6 +9,7 @@ myplot  <- plot(strptime(paste(ndata$Date, ndata$Time), format = '%d/%m/%Y %H:%M
 plot(strptime(paste(ndata$Date, ndata$Time), format = '%d/%m/%Y %H:%M:%S'), as.numeric(ndata$Sub_metering_1),col = "black", type ='l', xlab =""
      , ylab = "Energy sub metering")
 lines(strptime(paste(ndata$Date, ndata$Time), format = '%d/%m/%Y %H:%M:%S'), as.numeric(ndata$Sub_metering_2),col = "red")
+
 lines(strptime(paste(ndata$Date, ndata$Time), format = '%d/%m/%Y %H:%M:%S'), as.numeric(ndata$Sub_metering_3),col = "blue")
 legend("topright", c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"), lty = c(1,1,1), lwd = c(2.5, 2.5, 2.5), col = c("black", "red", "blue"))
 dev.off()
